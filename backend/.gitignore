@@ -1,0 +1,63 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+*.py~
+db.sqlite3
+media/
+staticfiles/
+
+# If you collect static files to STATIC_ROOT
+/static/
+
+# Environment variables
+.env
+.env.local
+.env.prod
+.env.dev
+
+# VSCode / PyCharm / IDE settings
+.vscode/
+.idea/
+
+# Migrations cache (optional, keep if you want migrations in git)
+*/migrations/__pycache__/
+# Uncomment the next line to ignore migrations entirely
+# */migrations/*.py
+
+# Byte-compiled / C extensions
+*.so
+
+# Test and coverage reports
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# MyPy
+.mypy_cache/
+
+# Docker
+docker-compose.override.yml
+*.pid
+
+# Node modules (if using for frontend inside backend)
+node_modules/
+
+# MacOS
+.DS_Store
+
