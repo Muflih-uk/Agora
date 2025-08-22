@@ -3,7 +3,7 @@ from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.forms import UserChangeForm, UserCreationForm
 
-from .models import User
+from .models import AppUser
 
 
 class UserAdmin(BaseUserAdmin):
@@ -25,7 +25,7 @@ class UserAdmin(BaseUserAdmin):
             )
         }),
         (_("Important dates"), {"fields": ("last_login", "date_joined")}),
-        (_("User info"), {"fields": ("native_name", "phone_no")}),  # custom fields
+        #(_("User info"), {"fields": ("native_name", "phone_no")}),  # custom fields
     )
 
     # Fields shown when creating a new user
@@ -43,12 +43,12 @@ class UserAdmin(BaseUserAdmin):
         "first_name",
         "last_name",
         "is_staff",
-        "native_name",
-        "phone_no",
+        # "native_name",
+        # "phone_no",
     )
     search_fields = ("email", "first_name", "last_name")
     ordering = ("email",)
 
 
 # Register the custom User model with custom admin
-admin.site.register(User, UserAdmin)
+admin.site.register(AppUser, UserAdmin)

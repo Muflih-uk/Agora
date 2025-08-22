@@ -1,11 +1,11 @@
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, User
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
-
-class User(AbstractUser):
-    username = models.CharField(max_length=50, blank= True, null= True, unique= True)
+# That is App User Model
+class AppUser(AbstractUser):
+    username = models.CharField(max_length=50, unique= True)
     email = models.EmailField(_('email address'),unique= True)
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']

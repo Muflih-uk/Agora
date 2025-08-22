@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'channels',
     'rest_framework.authtoken',
-    'rest_auth'
 
     # Local apps
     'users',
@@ -52,7 +51,7 @@ INSTALLED_APPS = [
 
 ]
 
-AUTH_USER_MODEL ='users.models.User'
+AUTH_USER_MODEL ='users.AppUser'
 
 
 
@@ -96,10 +95,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'agoradb',
-        'USER': 'postgres',
-        'PASSWORD': 'mishu1342@2006',
+        'USER': 'agora',
+        'PASSWORD': 'agora123',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5432',
     }
 }
 
