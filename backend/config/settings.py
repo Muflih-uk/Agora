@@ -39,8 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Third-party apps
     'rest_framework',
-    'rest_framework_simplejwt'
+    'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
+
     # 'channels',
     # 'rest_framework.authtoken',
 
@@ -49,8 +53,8 @@ INSTALLED_APPS = [
     'events',
     'tickets',
     'chat',
-
 ]
+
 
 AUTH_USER_MODEL ='users.AppUser'
 
