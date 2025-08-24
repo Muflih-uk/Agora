@@ -1,0 +1,27 @@
+type: http_request
+model: http_request
+id: rq_siD7RV2MaB
+createdAt: 2025-08-24T03:58:18.155741696
+updatedAt: 2025-08-24T04:00:22.768338912
+workspaceId: wk_mue6UTnWZF
+folderId: null
+authentication: {}
+authenticationType: null
+body:
+  text: |
+    {
+      "email": "test@example.com",
+      "password": "mypassword"
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: xkuGuKJb0N
+method: POST
+name: Login
+sortPriority: -1756007836219.0
+url: http://127.0.0.1:8000/api/auth/login/
+urlParameters: []

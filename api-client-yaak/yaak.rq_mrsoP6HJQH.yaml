@@ -1,0 +1,28 @@
+type: http_request
+model: http_request
+id: rq_mrsoP6HJQH
+createdAt: 2025-08-24T03:57:16.220111774
+updatedAt: 2025-08-24T04:00:12.185799848
+workspaceId: wk_mue6UTnWZF
+folderId: null
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "email": "test@example.com",
+      "username": "testuser",
+      "password": "mypassword"
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: sxgK03n7wM
+method: POST
+name: Register
+sortPriority: -1756007836219.0
+url: http://127.0.0.1:8000/api/auth/register/
+urlParameters: []

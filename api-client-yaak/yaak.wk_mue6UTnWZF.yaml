@@ -1,0 +1,14 @@
+type: workspace
+model: workspace
+id: wk_mue6UTnWZF
+createdAt: 2025-08-24T03:56:23.016595024
+updatedAt: 2025-08-24T03:56:23.016597227
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: Agora
+encryptionKeyChallenge: null
+settingValidateCertificates: true
+settingFollowRedirects: true
+settingRequestTimeout: 0
