@@ -1,3 +1,4 @@
+from django.contrib.auth import authenticate
 from rest_framework import serializers
 
 from .models import AppUser
@@ -20,9 +21,17 @@ class AppUserSignUpSerializer(serializers.ModelSerializer):
 
         return user
 
-class AppUserLoginSerializer(TokenObtainPairSerializer):
-    @classmethod
-    def get_token(cls, user):
-        token = super().get_token(user)
-        token['username'] = user.username
-        return token
+class AppUserLoginSerializer(serializers.Serializer):
+    email = serializers.EmailField()
+    password = serializers.CharField(write_only=True)
+
+    def validate(self, data):
+        email = data.get("email")
+        password = data.get("password")
+
+        user = authenticate(username=email, password=password)
+        if not user:
+            raise serializers.ValidationError({"detail": "Invalid email or password"})
+
+        data["user"] = user
+        return data

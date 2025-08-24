@@ -1,10 +1,12 @@
 # Create your views here.
+from wsgiref.validate import validator
+
 from django.core.serializers import serialize
 from django.urls.converters import REGISTERED_CONVERTERS
 from rest_framework import viewsets, status
 from rest_framework.decorators import action, permission_classes
 from rest_framework.response import Response
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework_simplejwt.tokens import RefreshToken
 
 from .models import AppUser
@@ -27,19 +29,19 @@ class AuthViewSet(viewsets.ViewSet):
 
     @action(detail=False, methods=['post'], permission_classes = [AllowAny])
     def login(self, request):
-        serializer = AppUserLoginSerializer(data = request.data)
-        if serializer.is_valid():
-            user = serializer.validated_data["user"]
-            refresh = RefreshToken.for_user(user)
-            return Response({
-                "user": AppUserSignUpSerializer(user).data,
-                "refresh": str(refresh),
-                "access": str(refresh.access_token)
-            }, status= status.HTTP_200_OK)
+        serializer = AppUserLoginSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
 
-        return Response(serializer.errors, status= status.HTTP_400_BAD_REQUEST)
+        user = serializer.validated_data["user"]
+        refresh = RefreshToken.for_user(user)
 
-    @action(detail=False, methods=['post'])
+        return Response({
+            "user": AppUserSignUpSerializer(user).data,
+            "refresh": str(refresh),
+            "access": str(refresh.access_token)
+        }, status=status.HTTP_200_OK)
+
+    @action(detail=False, methods=['post'], permission_classes = [IsAuthenticated])
     def logout(self, request):
         try:
             refresh_token = request.data["refresh"]
