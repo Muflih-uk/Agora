@@ -2,7 +2,6 @@ from django.contrib.auth import authenticate
 from rest_framework import serializers
 
 from .models import AppUser
-from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 
 class AppUserSignUpSerializer(serializers.ModelSerializer):
