@@ -1,0 +1,26 @@
+type: http_request
+model: http_request
+id: rq_AbjCXYuxhZ
+createdAt: 2025-08-24T15:26:49.843806118
+updatedAt: 2025-08-24T15:51:21.806571196
+workspaceId: wk_mue6UTnWZF
+folderId: null
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: ''
+headers:
+- enabled: true
+  name: Authorization
+  value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MDUzMjY1LCJpYXQiOjE3NTYwNDk2NjUsImp0aSI6ImJjNjFlZWUxMGQzZTQ4MjhiMTJlN2EwNGFkNjQ0NmQ1IiwidXNlcl9pZCI6IjEifQ.rTtTpnJdSpj7R1efulw7-qcDx7MOTNLWXkIZVRJOZbs
+  id: JTZwSdGYNc
+- enabled: true
+  name: ''
+  value: ''
+  id: I0H9KqxCUr
+method: GET
+name: Tickets GET
+sortPriority: -1756007836218.998
+url: http://127.0.0.1:8000/api/tickets/
+urlParameters: []

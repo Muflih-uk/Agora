@@ -1,39 +1,31 @@
 type: http_request
 model: http_request
-id: rq_Poo5ePwc6w
-createdAt: 2025-08-24T08:10:48.216651176
-updatedAt: 2025-08-24T15:36:11.904590417
+id: rq_ZCYpiPe7vo
+createdAt: 2025-08-24T15:26:35.047084649
+updatedAt: 2025-08-24T15:38:36.965863565
 workspaceId: wk_mue6UTnWZF
 folderId: null
 authentication: {}
 authenticationType: null
 body:
-  text: |-
-    {
-        "title": "Python Workshop",
-        "description": "Learn the basics of Python programming.",
-        "category": "Workshop",
-        "location_name": "Online",
-        "date_time": "2025-09-01T10:00:00Z",
-        "ticket_limit": 50
-    }
+  text: "{\n    \"event\": 1 \n}\n"
 bodyType: application/json
 description: ''
 headers:
 - enabled: true
+  name: Content-Type
+  value: application/json
+  id: YjdjT2deJ7
+- enabled: true
   name: Authorization
   value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MDUzMjY1LCJpYXQiOjE3NTYwNDk2NjUsImp0aSI6ImJjNjFlZWUxMGQzZTQ4MjhiMTJlN2EwNGFkNjQ0NmQ1IiwidXNlcl9pZCI6IjEifQ.rTtTpnJdSpj7R1efulw7-qcDx7MOTNLWXkIZVRJOZbs
-  id: ngqKDPt6YR
+  id: dpdgzk3bWs
 - enabled: true
   name: ''
   value: ''
-  id: C0DPYPjS4K
-- enabled: true
-  name: Content-Type
-  value: application/json
-  id: eNfZthZJuP
+  id: apYj2mIFjC
 method: POST
-name: Events POST
+name: Tickets POST
 sortPriority: -1756007836218.999
-url: http://127.0.0.1:8000/api/events/
+url: http://127.0.0.1:8000/api/tickets/
 urlParameters: []

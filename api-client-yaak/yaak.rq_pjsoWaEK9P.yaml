@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_pjsoWaEK9P
 createdAt: 2025-08-24T03:58:52.457019337
-updatedAt: 2025-08-24T04:00:31.406193172
+updatedAt: 2025-08-24T15:34:15.040985919
 workspaceId: wk_mue6UTnWZF
 folderId: null
 authentication: {}
@@ -10,7 +10,7 @@ authenticationType: null
 body:
   text: |-
     {
-      "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1NjA5MTE4MiwiaWF0IjoxNzU2MDA0NzgyLCJqdGkiOiJiZjgyODEwNzhkN2E0NDQ2ODFlODBkMzgwODRhNjc1NSIsInVzZXJfaWQiOiIxIn0.8F2ELkgPLyBuyTMUAwGiIThau6WEx9oK8pIvnBIsBDQ"
+      "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1NjEzNjAwMSwiaWF0IjoxNzU2MDQ5NjAxLCJqdGkiOiIzNGQ0YWJhZTZiZWU0MjIzYjU1YThhOTkzZTY3NDVmNiIsInVzZXJfaWQiOiIxIn0.HnTjgoGsNEthvAkux1blO_TuwzzGhQIZSUsi0Pf4fE8"
     }
 bodyType: application/json
 description: ''
@@ -21,12 +21,12 @@ headers:
   id: uQT8suUVHZ
 - enabled: true
   name: Authorization
-  value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MDA4Mjg1LCJpYXQiOjE3NTYwMDQ2ODUsImp0aSI6ImEwMTg2ZjMzYzViOTQyMjQ5YzViMGY0OThkMDZlNTQzIiwidXNlcl9pZCI6IjEifQ.BrZkEe3Tk4rxDszI_-dOS4ke4vGZeS2v01xB0PR0RSQ
+  value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MDUzMjAxLCJpYXQiOjE3NTYwNDk2MDEsImp0aSI6Ijg0MGU2NTYwZDZjMDQ2NmQ5ZjM5NDQyZWZmZTg2OWQyIiwidXNlcl9pZCI6IjEifQ.NGImjvidQ_9L8yVNLk82Fhzd_SRC7_P7CsyEdBJ1bJY
   id: PNmY3ch4kd
 - enabled: true
   name: ''
   value: ''
-  id: q295cQw4hx
+  id: H2eWizyE86
 method: POST
 name: Logout
 sortPriority: -1756007836219.0
