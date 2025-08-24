@@ -5,6 +5,6 @@ from .views import AuthViewSet
 router = SimpleRouter()
 router.register(r'auth', AuthViewSet, basename='auth')
 
-urlpatterns = [
+url_patterns = [
     path('', include(router.urls))
 ]
