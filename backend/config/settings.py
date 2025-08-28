@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from datetime import timedelta
 from pathlib import Path
 
+from asgiref.typing import ASGIApplication
 from django.conf.global_settings import AUTH_USER_MODEL
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -46,8 +47,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',
     'django_filters',
 
-    # 'channels',
-    # 'rest_framework.authtoken',
+    'channels',
+
 
     # Local apps
     'users',
@@ -55,7 +56,6 @@ INSTALLED_APPS = [
     'tickets',
     'chat',
 ]
-
 
 AUTH_USER_MODEL ='users.AppUser'
 
@@ -165,4 +165,13 @@ SIMPLE_JWT = {
     'SLIDING_TOKEN_LIFETIME': timedelta(days=30),
     'SLIDING_TOKEN_REFRESH_LIFETIME_LATE_USER': timedelta(days=1),
     'SLIDING_TOKEN_LIFETIME_LATE_USER': timedelta(days=30),
+}
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+          "hosts": [("127.0.0.1", 6379)],
+        },
+    }
 }
