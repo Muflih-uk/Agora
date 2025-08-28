@@ -2,7 +2,7 @@ type: websocket_request
 model: websocket_request
 id: wr_RVv7m8PL2w
 createdAt: 2025-08-28T07:06:31.369097516
-updatedAt: 2025-08-28T07:28:53.643265065
+updatedAt: 2025-08-28T09:56:51.503051077
 workspaceId: wk_mue6UTnWZF
 folderId: null
 authentication: {}
@@ -17,5 +17,5 @@ message: |+
 
 name: Chat
 sortPriority: -1756007900000.0
-url: ws://127.0.0.1:8000/ws/chat/
+url: wss://agora-96lf.onrender.com/ws/chat/1/
 urlParameters: []

@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_pjsoWaEK9P
 createdAt: 2025-08-24T03:58:52.457019337
-updatedAt: 2025-08-24T15:34:15.040985919
+updatedAt: 2025-08-28T09:54:31.993805699
 workspaceId: wk_mue6UTnWZF
 folderId: null
 authentication: {}
@@ -30,5 +30,5 @@ headers:
 method: POST
 name: Logout
 sortPriority: -1756007836219.0
-url: http://127.0.0.1:8000/api/auth/logout/
+url: https://agora-96lf.onrender.com/api/auth/logout/
 urlParameters: []

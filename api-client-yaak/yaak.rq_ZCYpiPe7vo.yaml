@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_ZCYpiPe7vo
 createdAt: 2025-08-24T15:26:35.047084649
-updatedAt: 2025-08-24T15:38:36.965863565
+updatedAt: 2025-08-28T09:53:37.141648143
 workspaceId: wk_mue6UTnWZF
 folderId: null
 authentication: {}
@@ -27,5 +27,5 @@ headers:
 method: POST
 name: Tickets POST
 sortPriority: -1756007836218.999
-url: http://127.0.0.1:8000/api/tickets/
+url: https://agora-96lf.onrender.com/api/tickets/
 urlParameters: []

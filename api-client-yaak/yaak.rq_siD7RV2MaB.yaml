@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_siD7RV2MaB
 createdAt: 2025-08-24T03:58:18.155741696
-updatedAt: 2025-08-24T04:00:22.768338912
+updatedAt: 2025-08-28T09:54:21.336063598
 workspaceId: wk_mue6UTnWZF
 folderId: null
 authentication: {}
@@ -23,5 +23,5 @@ headers:
 method: POST
 name: Login
 sortPriority: -1756007836219.0
-url: http://127.0.0.1:8000/api/auth/login/
+url: https://agora-96lf.onrender.com/api/auth/login/
 urlParameters: []

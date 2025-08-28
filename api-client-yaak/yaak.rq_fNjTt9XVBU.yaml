@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_fNjTt9XVBU
 createdAt: 2025-08-24T08:08:52.435065777
-updatedAt: 2025-08-24T15:28:01.091057859
+updatedAt: 2025-08-28T09:54:42.616670042
 workspaceId: wk_mue6UTnWZF
 folderId: null
 authentication: {}
@@ -14,5 +14,5 @@ headers: []
 method: GET
 name: Events GET
 sortPriority: -1756007836219.0
-url: http://127.0.0.1:8000/api/events/
+url: https://agora-96lf.onrender.com/api/events/
 urlParameters: []
