@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from datetime import timedelta
 from pathlib import Path
 
-from asgiref.typing import ASGIApplication
-from django.conf.global_settings import AUTH_USER_MODEL
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -160,12 +158,12 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
-    'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
-    'SLIDING_TOKEN_LIFETIME': timedelta(days=30),
-    'SLIDING_TOKEN_REFRESH_LIFETIME_LATE_USER': timedelta(days=1),
-    'SLIDING_TOKEN_LIFETIME_LATE_USER': timedelta(days=30),
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
+    "ROTATE_REFRESH_TOKENS": True,
+    "BLACKLIST_AFTER_ROTATION": True,
 }
+
 
 CHANNEL_LAYERS = {
     "default": {
