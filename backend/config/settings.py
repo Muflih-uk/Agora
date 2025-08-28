@@ -102,14 +102,6 @@ DATABASES = {
     'default': dj_database_url.config(
         default=os.environ.get('DATABASE_URL')
     )
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #     'NAME': 'agoradb',
-    #     'USER': 'agora',
-    #     'PASSWORD': 'agora123',
-    #     'HOST': 'localhost',
-    #     'PORT': '5432',
-    # }
 }
 
 
