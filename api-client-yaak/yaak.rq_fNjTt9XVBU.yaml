@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_fNjTt9XVBU
 createdAt: 2025-08-24T08:08:52.435065777
-updatedAt: 2025-08-28T14:21:47.958874204
+updatedAt: 2025-08-28T14:37:34.126398842
 workspaceId: wk_mue6UTnWZF
 folderId: null
 authentication: {}
@@ -14,5 +14,5 @@ headers: []
 method: GET
 name: Events GET
 sortPriority: -1756007836219.0
-url: https://agora-96lf.onrender.com/api/events/sports/
+url: https://agora-96lf.onrender.com/api/events/category/workshop/
 urlParameters: []

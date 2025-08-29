@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_Poo5ePwc6w
 createdAt: 2025-08-24T08:10:48.216651176
-updatedAt: 2025-08-28T09:53:51.586620866
+updatedAt: 2025-08-28T14:37:19.172663682
 workspaceId: wk_mue6UTnWZF
 folderId: null
 authentication: {}
@@ -22,16 +22,16 @@ description: ''
 headers:
 - enabled: true
   name: Authorization
-  value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MDUzMjY1LCJpYXQiOjE3NTYwNDk2NjUsImp0aSI6ImJjNjFlZWUxMGQzZTQ4MjhiMTJlN2EwNGFkNjQ0NmQ1IiwidXNlcl9pZCI6IjEifQ.rTtTpnJdSpj7R1efulw7-qcDx7MOTNLWXkIZVRJOZbs
+  value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2Mzk1MzcxLCJpYXQiOjE3NTYzOTE3NzEsImp0aSI6IjU2MGFmMDk3MmE0MDRkYTI4MjZhMWE4ZWNmNGJjNDVmIiwidXNlcl9pZCI6IjEifQ.ixuckgW2N-OBvf6MOKuGjpBHK7cZ1K-jY6a1nB3WlrU
   id: ngqKDPt6YR
-- enabled: true
-  name: ''
-  value: ''
-  id: C0DPYPjS4K
 - enabled: true
   name: Content-Type
   value: application/json
   id: eNfZthZJuP
+- enabled: true
+  name: ''
+  value: ''
+  id: 4KU963GDdt
 method: POST
 name: Events POST
 sortPriority: -1756007836218.999

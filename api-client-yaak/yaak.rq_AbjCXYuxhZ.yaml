@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_AbjCXYuxhZ
 createdAt: 2025-08-24T15:26:49.843806118
-updatedAt: 2025-08-28T09:54:03.415494242
+updatedAt: 2025-08-28T14:38:43.957884825
 workspaceId: wk_mue6UTnWZF
 folderId: null
 authentication: {}
@@ -13,12 +13,12 @@ description: ''
 headers:
 - enabled: true
   name: Authorization
-  value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MDUzMjY1LCJpYXQiOjE3NTYwNDk2NjUsImp0aSI6ImJjNjFlZWUxMGQzZTQ4MjhiMTJlN2EwNGFkNjQ0NmQ1IiwidXNlcl9pZCI6IjEifQ.rTtTpnJdSpj7R1efulw7-qcDx7MOTNLWXkIZVRJOZbs
+  value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2Mzk1MzcxLCJpYXQiOjE3NTYzOTE3NzEsImp0aSI6IjU2MGFmMDk3MmE0MDRkYTI4MjZhMWE4ZWNmNGJjNDVmIiwidXNlcl9pZCI6IjEifQ.ixuckgW2N-OBvf6MOKuGjpBHK7cZ1K-jY6a1nB3WlrU
   id: JTZwSdGYNc
 - enabled: true
   name: ''
   value: ''
-  id: I0H9KqxCUr
+  id: BuT0QCCxB6
 method: GET
 name: Tickets GET
 sortPriority: -1756007836218.998
