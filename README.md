@@ -75,8 +75,8 @@ Built using **Flutter** for the frontend and **Django + PostgreSQL** for the bac
 ### Backend (Django)
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/community-event-app.git
-cd community-event-app/backend
+git clone https://github.com/Muflih-uk/Agora.git
+cd Agora/backend
 
 # Create virtual environment
 python -m venv env
