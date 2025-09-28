@@ -1,7 +1,7 @@
 # 📅 Community Event Management App
 
 A mobile and web platform to **discover, create, and manage community events** with ease.  
-Built using **Flutter** for the frontend and **Django + PostgreSQL** for the backend.  
+Built using **React+Vite** for the frontend and **Django + PostgreSQL** for the backend.  
 
 ---
 
@@ -26,10 +26,8 @@ Built using **Flutter** for the frontend and **Django + PostgreSQL** for the bac
 
 ## 🛠️ Tech Stack
 
-### Frontend (Flutter)
-- Flutter (Mobile + Web)
+### Frontend (React+Vite)
 - Google Maps integration
-- State management (Provider / Riverpod / Bloc)
 - QR Code Generator
 - WebSocket Client
 
